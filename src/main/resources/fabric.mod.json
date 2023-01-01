@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "sunhurt",
+  "version": "${version}",
+  "name": "Sunhurt",
+  "description": "The Sun hurts the player",
+  "authors": [
+    "CodeCraft"
+  ],
+  "contact": {
+    "sources": "https://github.com/CodeCraftPlugin/SunHurts",
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/sunhurt/sunhurt.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.codecraft.sunhurt.client.SunhurtClient"
+    ],
+    "main": [
+      "me.codecraft.sunhurt.Sunhurt"
+    ]
+  },
+  "mixins": [
+    "sunhurt.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+
+}
